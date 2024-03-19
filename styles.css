@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+}
+
+.logo {
+	padding: 2em;
+}
+.header-btn {
+	display: inline;
+	float: right;
+	padding: 0.5em 2.5em;
+	margin: 2em 3em;
+	background: #fff;
+	color: black;
+	border-radius: 50px;
+}
+.container {
+	width: 90%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.section-one {
+	padding-bottom: 20em;
+	background: hsl(193, 100%, 96%);
+	background-image: url("/images/bg-hero-desktop.svg");
+}
