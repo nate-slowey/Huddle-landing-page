@@ -8,6 +8,8 @@ p {
 }
 .btn {
 	font-size: 1rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
 }
 .section-one {
 	font-family: "Open Sans", sans-serif;
@@ -38,9 +40,15 @@ header {
 	color: black;
 	border-radius: 50px;
 }
+.header-btn:hover,
+.header-btn:focus {
+	background: hsl(322, 100%, 66%);
+	color: white;
+}
 .section-one {
 	background: hsl(193, 100%, 96%);
 	background-image: url("/images/bg-hero-desktop.svg");
+	padding-bottom: 3em;
 }
 
 .container-grid {
@@ -76,6 +84,11 @@ header {
 	text-align: center;
 	margin-top: 1.5em;
 }
+.btn:hover,
+.btn:focus {
+	background: hsl(192, 100%, 9%);
+	color: white;
+}
 .container-grid img {
 	grid-column: 2/3;
 	grid-row: 1/4;
@@ -83,16 +96,15 @@ header {
 }
 
 .container-flex {
-	width: 85%;
-	margin: 10em auto;
+	margin: 10em auto 7em auto;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-	max-width: 1200px;
+	width: 90%;
 }
 .flex-row {
 	display: flex;
-	border-radius: 5px;
+	border-radius: 10px;
 	box-shadow: 0 0 10px 1px rgb(226, 225, 225);
 	align-items: center;
 	justify-content: center;
@@ -104,4 +116,98 @@ header {
 .inner-text {
 	text-align: left;
 	padding: 10em 9em;
+}
+.bottom-box {
+	display: flex;
+	flex-direction: column;
+	margin: 1em auto -5em auto;
+	width: 40%;
+	padding: 3em 5em;
+	box-shadow: 0 0 10px 1px rgb(226, 225, 225);
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	row-gap: 2em;
+	position: relative;
+	background: #fff;
+}
+.bottom-btn {
+	background: hsl(322, 100%, 66%);
+	padding: 1.25em 5em;
+	text-align: center;
+	color: white;
+	border-radius: 50px;
+}
+footer {
+	background: hsl(192, 100%, 9%);
+	color: white;
+	padding: 10em 5em;
+}
+.filter-white {
+	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(346deg)
+		contrast(101%);
+}
+.footer-container {
+	display: grid;
+	grid-template: 1fr 10% 1fr 1fr 1fr 1fr / 5% 45% 10% 1fr 1fr 10% 1fr;
+	max-width: 1300px;
+	margin: 0 auto;
+	align-items: center;
+	grid-template-areas:
+		"logo logo . . . . ."
+		". . . . . . ."
+		"location-icon location-text  about-us . career . socials"
+		". location-text  what-we-do . blog . ."
+		"phone-icon phone-number  FAQ . contact-us . ."
+		"email-icon email . . . . .";
+}
+
+/* footer grid locations*/
+.location-icon {
+	grid-area: location-icon;
+	justify-self: center;
+}
+.phone-icon {
+	grid-area: phone-icon;
+	justify-self: center;
+}
+.email-icon {
+	grid-area: email-icon;
+	justify-self: center;
+}
+.location-text {
+	grid-area: location-text;
+	width: 60%;
+	align-self: flex-start;
+	margin-top: 0.5em;
+}
+.phone-number {
+	grid-area: phone-number;
+}
+.email {
+	grid-area: email;
+}
+.about-us {
+	grid-area: about-us;
+}
+.career {
+	grid-area: career;
+}
+.what-we-do {
+	grid-area: what-we-do;
+}
+.blog {
+	grid-area: blog;
+}
+.FAQ {
+	grid-area: FAQ;
+}
+.contact-us {
+	grid-area: contact-us;
+}
+.socials {
+	grid-area: socials;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
