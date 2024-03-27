@@ -17,6 +17,11 @@ header, .bottom-box{
 	text-align: left;
 	
 }
+.header-body{
+	font-weight: 200;
+	font-family: "Open Sans", sans-serif;
+
+}
 .main-text, footer, .btn {
 	font-family: "Open Sans", sans-serif;
 	font-style: normal;
@@ -25,7 +30,8 @@ header, .bottom-box{
 	font-weight: 700;
 }
 .main-text-paragraph{
-	font-weight: 400;
+	font-weight: 300;
+	color: rgb(174, 174, 174);
 }
 .btn{
 	font-weight: 600;
@@ -244,13 +250,43 @@ footer {
 
 /* media query*/
 @media (min-width: 320px) and (max-width: 800px) {
+	
+	.logo{
+		margin: 2em 1em;
+		width: 30%;
+	}
+	.logo img{
+		width: 100%;
+		margin: 0;
+	}
+	.logo-box-btn{
+		margin:  2em 1em;
+		padding: 0.4em 2em;
+		justify-content: center;
+		align-self: center;
+		text-align: center;
+		font-size: 0.8rem;
+		
+	}
 	.header-grid-container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		text-align: center;
 		margin-top: 5em;
+		width: 80%;
+		gap: 2em;
+	}
+	.header-big{
+		font-size: 1.5rem;
+	}
+	.header-big, .header-body{
+		align-self: center;
+		text-align: center;
+		width: 100%;
+	}
+	.header-btn{
+		align-self: center;
+		margin-bottom: 1em;
 	}
 	.main-row {
 		flex-direction: column-reverse;
@@ -261,8 +297,72 @@ footer {
 	.main-img-middle {
 		order: 1;
 	}
-	.main-text-paragraph, .main-text-heading {
+	.main-img{
+		margin-top: 2em;
+		width: 80%;
+	}
+	.main-text{
+		width: 85%;
+		padding-top: 0;
+	}
+	.main-text *{
 		text-align: center;
 	}
-	
+	.bottom-box{
+		padding: 2em 0 3em 0;
+		width: 90%;
+	}
+	.bottom-box-heading{
+		font-size: 1.1rem;
+		width: 90%;
+		
+	}
+	.bottom-box-btn{
+		padding: 1em 3.5em;
+		font-size: 0.8rem;
+
+	}
+	footer{
+		padding: 0;
+		width: 100%;
+	}
+	.footer-container{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1em;
+	}
+	.logo-white{
+		margin-top: 10em;
+		margin-bottom: 1em;
+		width: 50%;
+	}
+	.logo-white img{
+		width: 100%;
+	}
+	.phone, .location, .email{
+		display: flex;
+		flex-direction: row;
+	}
+	.location, .phone, .email{
+		display: flex;
+		align-items: flex-start;
+		gap: 2em;
+	}
+	.location-icon {
+		margin-top: 5px;
+	}
+	.location-text, .phone-text, .email-text{
+		margin: 0;
+		align-self:self-start;
+		text-align: start;
+	}
+	.page-links{
+		margin-top: 1em;
+	}
+	.socials{
+		align-self: center;
+		margin-bottom: 1em;
+	}
 }
