@@ -300,6 +300,7 @@ footer {
 	.bottom-box{
 		padding: 2em 0 3em 0;
 		width: 90%;
+		
 	}
 	.bottom-box-heading{
 		font-size: 1.1rem;
@@ -314,6 +315,7 @@ footer {
 	footer{
 		padding: 0;
 		width: 100%;
+		padding-top: 3em;
 	}
 	.footer-container{
 		width: 90%;
@@ -323,10 +325,13 @@ footer {
 		gap: 1em;
 		margin: 0 auto;
 	}
+	.contact-container{
+		gap: 1em;
+	}
 	.logo-white{
-		margin-top: 10em;
-		margin-bottom: 1em;
-		width: 50%;
+		margin-top: 5em;
+		margin-left: 2em;
+		width: 40%;
 	}
 	.logo-white img{
 		width: 100%;
@@ -347,6 +352,8 @@ footer {
 	}
 	.page-links{
 		margin-top: 1em;
+		display: flex;
+		flex-direction: column;
 	}
 	.socials{
 		align-self: center;
